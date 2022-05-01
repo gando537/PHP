@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Liste à choix multiples</title>
+        <style type="text/css">
+            fieldset {border: double medium red}
+        </style>
+    </head>
+    <body>
+        <form action="index.php" method="post" enctype="application/x-www-form-urlencoded">
+
+            <fieldset>
+                <legend>
+                    <b>Recherche d'emploi : complétez la fiche</b>
+                </legend>
+                <div>
+                    <span>
+                        Nom <input type="text" name="ident[]" /></td>
+                        Prénom <input type="text" name="ident[]" /></td>
+                        Âge <input type="number" step="1" name="ident[]" /></td>
+                        <br /><br />
+                        Langues pratiquées :<br />
+                        <select name="lang[]" multiple="multiple">
+                            <option value="français"> français</option>
+                            <option value="anglais"> anglais</option>
+                            <option value="allemand"> allemand</option>
+                            <option value="espagnol"> espagnol</option>
+                        </select>
+                        <br /><br />
+                        Compétences informatiques :<br />
+                        HTML 5 <input type="checkbox" name="competent[]" value="HTML 5" />
+                        CSS 3 <input type="checkbox" name="competent[]" value="CSS 3" />
+                        PHP <input type="checkbox" name="competent[]" value="PHP" />
+                        MySQL <input type="checkbox" name="competent[]" value="MySQL" />
+                    </span><br /><br />
+                    <input type="reset" value="Effacer"/>
+                    <input type="submit" value="Envoi"/>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

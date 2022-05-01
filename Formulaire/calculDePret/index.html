@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Calcul de prêts</title>
+        <style type="text/css">
+            fieldset {border: double medium red}
+        </style>
+    </head>
+    <body>
+        <h3>Prêts</h3>
+        <form action="index.php" method="post" enctype="application/x-www-form-urlencoded">
+
+            <fieldset>
+                <legend>
+                    <b>Les Caractéristiques de votre prêt</b>
+                </legend>
+                <table>
+                    <tr>
+                        <td>Montant</td>
+                        <td><input type="number" name="capital" step="1000"/></td>
+                    </tr>
+                    <tr>
+                        <td>Taux</td>
+                        <td><input type="number" name="taux" step="0.1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Durée en année</td>
+                        <td><input type="number" name="duree" step="1"/></td>
+                    </tr>
+                    <tr>
+                        <td>Assurance</td>
+                        <td>OUI : <input type="radio" name="assur" checked="checked" value="1"/>&nbsp;
+                        NON : <input type="radio" name="assur" value="0"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" name="" value="Effacer"/></td>
+                        <td><input type="submit" name="" value="Calculer"/></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </body>
+</html>
